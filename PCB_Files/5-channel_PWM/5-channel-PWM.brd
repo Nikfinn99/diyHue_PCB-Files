@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
+<grid distance="12.5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -805,16 +805,14 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="14.0701" y="14.9225" size="0.02" layer="28" rot="MR0"/>
 </element>
 <element name="R1" library="diyHue" package="MULTI_RESISTOR" value="4k7" x="30.48" y="21.59" smashed="yes">
-<attribute name="VALUE" x="28.8544" y="21.1074" size="0.9906" layer="21" ratio="10"/>
+<attribute name="VALUE" x="29.21" y="22.86" size="0.9906" layer="21" ratio="10"/>
 </element>
 <element name="H1" library="holes" package="3,0-PAD" value="MOUNT-PAD-ROUND3.0" x="5" y="5"/>
 <element name="H2" library="holes" package="3,0-PAD" value="MOUNT-PAD-ROUND3.0" x="53" y="5"/>
 <element name="H3" library="holes" package="3,0-PAD" value="MOUNT-PAD-ROUND3.0" x="53" y="58"/>
 <element name="H4" library="holes" package="3,0-PAD" value="MOUNT-PAD-ROUND3.0" x="5" y="58"/>
 <element name="BTN3" library="schalter_taster" package="KSM611A" value="" x="52.705" y="19.3675" rot="R180"/>
-<element name="R4" library="diyHue" package="MULTI_RESISTOR" value="4k7" x="30.48" y="16.51" smashed="yes">
-<attribute name="VALUE" x="28.8544" y="16.0274" size="0.9906" layer="21" ratio="10"/>
-</element>
+<element name="R4" library="diyHue" package="MULTI_RESISTOR" value="4k7" x="30.48" y="16.51" smashed="yes"/>
 <element name="Q1" library="transistor-fet" package="TO220" value="N-MOS" x="6.35" y="38.1"/>
 <element name="Q2" library="transistor-fet" package="TO220" value="N-MOS" x="17.78" y="38.1"/>
 <element name="Q3" library="transistor-fet" package="TO220" value="N-MOS" x="29.21" y="38.1"/>
@@ -827,31 +825,21 @@ design rules under a new name.</description>
 <attribute name="OC_NEWARK" value="84K9151" x="29.21" y="59.055" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="16.5576" y="54.0258" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="R3" library="diyHue" package="MULTI_RESISTOR" value="4k7" x="40.005" y="13.97" smashed="yes" rot="R180">
-<attribute name="VALUE" x="41.6306" y="14.4526" size="0.9906" layer="21" ratio="10" rot="R180"/>
-</element>
-<element name="R6" library="diyHue" package="MULTI_RESISTOR" value="4k7" x="40.005" y="16.51" smashed="yes" rot="R180">
-<attribute name="VALUE" x="41.6306" y="16.9926" size="0.9906" layer="21" ratio="10" rot="R180"/>
-</element>
-<element name="R7" library="diyHue" package="MULTI_RESISTOR" value="4k7" x="40.005" y="19.05" smashed="yes" rot="R180">
-<attribute name="VALUE" x="41.6306" y="19.5326" size="0.9906" layer="21" ratio="10" rot="R180"/>
-</element>
-<element name="R8" library="diyHue" package="MULTI_RESISTOR" value="4k7" x="40.005" y="21.59" smashed="yes" rot="R180">
-<attribute name="VALUE" x="41.6306" y="22.0726" size="0.9906" layer="21" ratio="10" rot="R180"/>
-</element>
+<element name="R3" library="diyHue" package="MULTI_RESISTOR" value="4k7" x="40.005" y="13.97" smashed="yes" rot="R180"/>
+<element name="R6" library="diyHue" package="MULTI_RESISTOR" value="4k7" x="40.005" y="16.51" smashed="yes" rot="R180"/>
+<element name="R7" library="diyHue" package="MULTI_RESISTOR" value="4k7" x="40.005" y="19.05" smashed="yes" rot="R180"/>
+<element name="R8" library="diyHue" package="MULTI_RESISTOR" value="4k7" x="40.005" y="21.59" smashed="yes" rot="R180"/>
 <element name="R9" library="diyHue" package="MULTI_RESISTOR" value="4k7" x="40.005" y="24.13" smashed="yes" rot="R180">
-<attribute name="VALUE" x="41.6306" y="24.6126" size="0.9906" layer="21" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="41.5925" y="26.3525" size="0.9906" layer="21" ratio="10" rot="R180"/>
 </element>
 <element name="BTN4" library="schalter_taster" package="KSM611A" value="" x="52.705" y="12.065" rot="R180"/>
-<element name="R5" library="diyHue" package="MULTI_RESISTOR" value="4k7" x="30.48" y="13.97" smashed="yes">
-<attribute name="VALUE" x="28.8544" y="13.4874" size="0.9906" layer="21" ratio="10"/>
-</element>
+<element name="R5" library="diyHue" package="MULTI_RESISTOR" value="4k7" x="30.48" y="13.97" smashed="yes"/>
 <element name="JP1" library="pinhead-2" package="1X06-S" value="" x="29.21" y="60.96" smashed="yes">
 <attribute name="VALUE" x="21.59" y="57.785" size="1.27" layer="27"/>
 </element>
 <element name="U$1" library="diyHue" package="BUCK_CONVERTER_TE818" value="BUCK_CONVERTER_TE818" x="15.24" y="19.05" rot="R270"/>
 <element name="BTN2" library="schalter_taster" package="KSM611A" value="" x="52.705" y="26.3525" rot="R180"/>
-<element name="R2" library="diyHue" package="MULTI_RESISTOR" value="4k7" x="30.48" y="19.05"/>
+<element name="R2" library="diyHue" package="MULTI_RESISTOR" value="4k7" x="30.48" y="19.05" smashed="yes"/>
 </elements>
 <signals>
 <signal name="GND">
