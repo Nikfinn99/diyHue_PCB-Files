@@ -1,4 +1,7 @@
 # diyHue_PCB-Files
+## This is the seperate repo for PCB files for the [diyHue](https://github.com/mariusmotea/diyHue) project
+
+There are currently two different board designs available, one is for driving 12v strips without integrated driver ic, and the other is for led strips with WS2812 or SK6812 or similar leds.
 
 | PWM Driver for up to 5 Channels |  |
 |----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
