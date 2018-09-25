@@ -172,6 +172,9 @@
 <wire x1="5" y1="36" x2="0" y2="31" width="0" layer="20" curve="90"/>
 <wire x1="53" y1="36" x2="58" y2="31" width="0" layer="20" curve="-90"/>
 <wire x1="53" y1="0" x2="58" y2="5" width="0" layer="20" curve="90"/>
+<wire x1="0.3175" y1="21.59" x2="9.8425" y2="21.59" width="0.1524" layer="21"/>
+<wire x1="9.8425" y1="21.59" x2="9.8425" y2="12.065" width="0.1524" layer="21"/>
+<wire x1="9.8425" y1="12.065" x2="0.3175" y2="12.065" width="0.1524" layer="21"/>
 </plain>
 <libraries>
 <library name="esp8266modules">
