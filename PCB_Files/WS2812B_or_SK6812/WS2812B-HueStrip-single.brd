@@ -165,7 +165,6 @@
 <dimension x1="53" y1="31" x2="53" y2="5" x3="62" y3="18" textsize="1.27" layer="47"/>
 <text x="15.24" y="20.6375" size="1.778" layer="22" rot="MR0">+5V</text>
 <text x="15.875" y="11.43" size="1.778" layer="22" rot="MR0">EXT</text>
-<rectangle x1="11.43" y1="15.24" x2="17.78" y2="17.78" layer="30"/>
 <wire x1="58" y1="5" x2="58" y2="31" width="0" layer="20"/>
 <wire x1="53" y1="36" x2="5" y2="36" width="0" layer="20"/>
 <wire x1="0" y1="31" x2="0" y2="5" width="0" layer="20"/>
