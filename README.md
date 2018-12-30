@@ -1,5 +1,5 @@
 # diyHue_PCB-Files
-## This is the seperate repo for PCB files for the [diyHue](https://github.com/mariusmotea/diyHue) project
+## This is the seperate repo for PCB files for the [diyHue](https://github.com/diyHue/diyHue) project
 
 **Important: The last designs had some bugs that made them unfunctional in the previous state! Only order the updated design!**
 
