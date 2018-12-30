@@ -11,6 +11,8 @@ If you are using a 5V power supply and select 5V with the solder bridge on the b
 |-|-|
 | ![bottom](https://github.com/Nikfinn99/diyHue_PCB-Files/blob/master/PCB_Files/5-channel_PWM/images/IMG_20181230_110004.jpg?raw=true) | ![empty](https://github.com/Nikfinn99/diyHue_PCB-Files/blob/master/PCB_Files/5-channel_PWM/images/IMG_20181230_110004_edit.jpg?raw=true)
 
+The Voltage regulator is above the 5.5mm DC Jack.
+
 | Voltage regulator module: | D1 Mini module: |
 |--|--|
 | ![voltage regulator](https://github.com/Nikfinn99/diyHue_PCB-Files/blob/master/PCB_Files/5-channel_PWM/images/IMG_20181230_103452.jpg?raw=true) | ![D1 Mini](https://github.com/Nikfinn99/diyHue_PCB-Files/blob/master/PCB_Files/5-channel_PWM/images/IMG_20181230_103502.jpg?raw=true)|
