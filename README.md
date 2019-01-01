@@ -1,8 +1,6 @@
 # diyHue_PCB-Files
 ## This is the seperate repo for PCB files for the [diyHue](https://github.com/diyHue/diyHue) project
 
-**Important: The last designs had some bugs that made them unfunctional in the previous state! Only order the updated design!**
-
 There are currently two different board designs available, one is for driving 12v strips without integrated driver ic, and the other is for led strips with WS2812 or SK6812 or similar leds.
 
 Every design uses one 5.5x2.1mm DC Jack for power input.<br>
