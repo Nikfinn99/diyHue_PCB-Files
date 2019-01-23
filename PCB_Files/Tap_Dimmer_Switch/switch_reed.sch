@@ -180,6 +180,37 @@
 <text x="-40.64" y="-8.89" size="5.08" layer="21" font="vector" rot="R90" align="center">-</text>
 <text x="-40.64" y="10.16" size="5.08" layer="21" font="vector" rot="R90" align="center">-</text>
 </package>
+<package name="SOT89">
+<wire x1="2.235" y1="-1.245" x2="-2.235" y2="-1.245" width="0.127" layer="51"/>
+<wire x1="2.235" y1="1.219" x2="2.235" y2="-1.245" width="0.127" layer="51"/>
+<wire x1="-2.235" y1="-1.245" x2="-2.235" y2="1.219" width="0.127" layer="51"/>
+<wire x1="-2.235" y1="1.219" x2="2.235" y2="1.219" width="0.127" layer="51"/>
+<wire x1="-0.7874" y1="1.5748" x2="-0.3556" y2="2.0066" width="0.1998" layer="51"/>
+<wire x1="-0.3556" y1="2.0066" x2="0.3556" y2="2.0066" width="0.1998" layer="51"/>
+<wire x1="0.3556" y1="2.0066" x2="0.7874" y2="1.5748" width="0.1998" layer="51"/>
+<wire x1="0.7874" y1="1.5748" x2="0.7874" y2="1.2954" width="0.1998" layer="51"/>
+<wire x1="0.7874" y1="1.2954" x2="-0.7874" y2="1.2954" width="0.1998" layer="51"/>
+<wire x1="-0.7874" y1="1.2954" x2="-0.7874" y2="1.5748" width="0.1998" layer="51"/>
+<smd name="1" x="-1.499" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
+<smd name="3" x="1.499" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
+<smd name="2" x="0" y="-1.727" dx="0.8" dy="1.9" layer="1"/>
+<smd name="2@1" x="0" y="0.94" dx="2.032" dy="3.65" layer="1" roundness="10"/>
+<text x="-2.54" y="3.175" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.4051" y="-4.3449" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.7272" y1="-2.1082" x2="-1.27" y2="-1.27" layer="51"/>
+<rectangle x1="1.27" y1="-2.1082" x2="1.7272" y2="-1.27" layer="51"/>
+<rectangle x1="-0.2794" y1="-2.1082" x2="0.2794" y2="-1.27" layer="51"/>
+<polygon width="0.1998" layer="51">
+<vertex x="-0.7874" y="1.3208"/>
+<vertex x="-0.7874" y="1.5748"/>
+<vertex x="-0.3556" y="2.0066"/>
+<vertex x="0.3048" y="2.0066"/>
+<vertex x="0.3556" y="2.0066"/>
+<vertex x="0.7874" y="1.5748"/>
+<vertex x="0.7874" y="1.2954"/>
+<vertex x="-0.7874" y="1.2954"/>
+</polygon>
+</package>
 <package name="SOT223">
 <wire x1="3.2766" y1="1.778" x2="3.2766" y2="-1.778" width="0.2032" layer="21"/>
 <wire x1="3.2766" y1="-1.778" x2="-3.2766" y2="-1.778" width="0.2032" layer="21"/>
@@ -357,10 +388,20 @@
 <gate name="G$1" symbol="HT7333" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT223">
+<device name="SOT223" package="SOT223">
 <connects>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="VIN" pad="2 4"/>
+<connect gate="G$1" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT89" package="SOT89">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="VIN" pad="2 2@1"/>
 <connect gate="G$1" pin="VOUT" pad="3"/>
 </connects>
 <technologies>
@@ -13765,7 +13806,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="10nF"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="P1" library="diyHue" deviceset="HT7333" device=""/>
+<part name="P1" library="diyHue" deviceset="HT7333" device="SOT89" value="HT7333"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="FTDI" library="pinhead-2" deviceset="PINHD-1X06" device="_2.54-S"/>
 <part name="BTN1" library="schalter_taster" deviceset="KSM611A" device=""/>
@@ -13862,8 +13903,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="GND5" gate="1" x="55.88" y="-5.08"/>
 <instance part="GND6" gate="1" x="83.82" y="0"/>
 <instance part="GND7" gate="1" x="96.52" y="0"/>
-<instance part="GND8" gate="1" x="167.64" y="15.24" rot="R90"/>
-<instance part="R10" gate="G$1" x="160.02" y="17.78"/>
+<instance part="GND8" gate="1" x="154.94" y="5.08"/>
+<instance part="R10" gate="G$1" x="160.02" y="12.7" rot="R270"/>
 <instance part="R11" gate="G$1" x="182.88" y="25.4" rot="R90"/>
 <instance part="R12" gate="G$1" x="177.8" y="27.94" rot="R90"/>
 <instance part="+3V3" gate="G$1" x="177.8" y="38.1"/>
@@ -13878,11 +13919,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="BTN4" gate="G$1" x="55.88" y="17.78" rot="R270"/>
 <instance part="C2" gate="G$1" x="68.58" y="45.72"/>
 <instance part="C3" gate="G$1" x="40.64" y="45.72"/>
-<instance part="RST_BTN" gate="G$1" x="165.1" y="0"/>
+<instance part="RST_BTN" gate="G$1" x="165.1" y="-5.08"/>
 <instance part="+3V4" gate="G$1" x="182.88" y="35.56"/>
-<instance part="GND11" gate="1" x="175.26" y="2.54" rot="R90"/>
-<instance part="GP0_BTN" gate="G$1" x="165.1" y="-10.16"/>
-<instance part="GND12" gate="1" x="175.26" y="-7.62" rot="R90"/>
+<instance part="GND11" gate="1" x="175.26" y="-2.54" rot="R90"/>
+<instance part="GP0_BTN" gate="G$1" x="165.1" y="-15.24"/>
+<instance part="GND12" gate="1" x="175.26" y="-12.7" rot="R90"/>
 <instance part="SJ1" gate="1" x="114.3" y="25.4"/>
 <instance part="R13" gate="G$1" x="66.04" y="2.54" rot="R90"/>
 <instance part="GND13" gate="1" x="66.04" y="-5.08"/>
@@ -14012,10 +14053,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="165.1" y1="15.24" x2="154.94" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="7.62" x2="154.94" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="165.1" y1="17.78" x2="165.1" y2="15.24" width="0.1524" layer="91"/>
-<junction x="165.1" y="15.24"/>
+<wire x1="160.02" y1="7.62" x2="154.94" y2="7.62" width="0.1524" layer="91"/>
+<junction x="154.94" y="7.62"/>
 </segment>
 <segment>
 <pinref part="GND9" gate="1" pin="GND"/>
@@ -14198,8 +14239,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </segment>
 <segment>
 <pinref part="RST_BTN" gate="G$1" pin="A"/>
-<wire x1="157.48" y1="2.54" x2="154.94" y2="2.54" width="0.1524" layer="91"/>
-<label x="154.94" y="2.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="157.48" y1="-2.54" x2="154.94" y2="-2.54" width="0.1524" layer="91"/>
+<label x="154.94" y="-2.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="D"/>
@@ -14261,10 +14302,21 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <junction x="68.58" y="48.26"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="GP15" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="GPIO15"/>
 <pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="17.78" x2="162.56" y2="17.78" width="0.1524" layer="91"/>
+<junction x="160.02" y="17.78"/>
+<label x="162.56" y="17.78" size="1.27" layer="95" xref="yes"/>
+<wire x1="160.02" y1="17.78" x2="154.94" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$8" gate="G$1" pin="G"/>
+<wire x1="134.62" y1="-53.34" x2="132.08" y2="-53.34" width="0.1524" layer="91"/>
+<pinref part="R22" gate="G$1" pin="2"/>
+<wire x1="132.08" y1="-53.34" x2="132.08" y2="-58.42" width="0.1524" layer="91"/>
+<label x="132.08" y="-53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -14283,15 +14335,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </segment>
 <segment>
 <pinref part="GP0_BTN" gate="G$1" pin="A"/>
-<wire x1="157.48" y1="-7.62" x2="154.94" y2="-7.62" width="0.1524" layer="91"/>
-<label x="154.94" y="-7.62" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$8" gate="G$1" pin="G"/>
-<wire x1="134.62" y1="-53.34" x2="132.08" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="R22" gate="G$1" pin="2"/>
-<wire x1="132.08" y1="-53.34" x2="132.08" y2="-58.42" width="0.1524" layer="91"/>
-<label x="132.08" y="-53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="157.48" y1="-12.7" x2="154.94" y2="-12.7" width="0.1524" layer="91"/>
+<label x="154.94" y="-12.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$3" class="0">
